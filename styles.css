@@ -33,15 +33,45 @@ nav div {
     width: 500px;
 }
 
-nav img {
+.duck {
+    position: relative;
     width: 50px;
     height: 50px;
+}
+
+.duck img {
+    width: 50px;
+    height: 50px;
+    right: 0;
+}
+
+.message {
+    display: none;
+    position: relative;
+	margin: 20px;
+    right: 40px;
+    width: 80px;
+	text-align: center;
+	font-size: 24px;
+	line-height: 1.3em;
+	background-color: #ffffff;
+    border: 2px solid black;
+    outline: 2px solid #ffffff;
+    border-radius: 10px;
+	color: black;
+	padding: 12px;
+}
+
+.duck:hover .message {
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
 }
 
 header {
     background-color: #ffffff;
     padding: 20px;
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 header h1 {
@@ -58,11 +88,11 @@ body {
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
-    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    user-select: none;
 }
 
 .portfolio-container {
@@ -83,6 +113,7 @@ body {
 }
 
 .container-links h3 {
+    padding-top: 20px;
     padding-left: 20px;
     font-size: 50px;
     -webkit-text-stroke: .5px #ffffff;
@@ -135,6 +166,12 @@ body {
     background-color: #ffffff;
     padding: 10px;
     border-radius: 10px;
+    transition: all .3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    z-index: 1;
 }
 
 .icon img {
@@ -151,11 +188,15 @@ body {
     gap: 20px;
 }
 
+.projects h4 {
+    padding-top: 15px;
+}
+
 .projects img {
-    width: 298px;
+    width: 296px;
     height: 200px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
     background-color: #5f9bcd;
 }
 
@@ -163,7 +204,8 @@ body {
     background-color: #ffffff;
     border-radius: 10px;
     width: 300px;
-    border: 1px solid black;
+    border: 2px solid black;
+    transition: all .3s ease;
 }
 
 .p1 p {
@@ -172,11 +214,27 @@ body {
     color: black;
 }
 
+.p1:hover {
+    transform: scale(1.025);
+    z-index: 1;   
+}
+
+.p2:hover {
+    transform: scale(1.025);
+    z-index: 1;   
+}
+
+.p3:hover {
+    transform: scale(1.025);
+    z-index: 1;   
+}
+
 .p2 {
     background-color: #ffffff;
     border-radius: 10px;
     width: 300px;
-    border: .1px solid black;
+    border: 2px solid black;
+    transition: all .3s ease;
 }
 
 .p2 p {
@@ -189,7 +247,8 @@ body {
     background-color: #ffffff;
     border-radius: 10px;
     width: 300px;
-    border: .1px solid black;
+    border: 2px solid black;
+    transition: all .3s ease;
 }
 
 .p3 p {
