@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "ArcadeClassic";
+    src: url("fonts/ARCADECLASSIC.TTF");
+}
+
+@font-face {
+    font-family: "Pixeloid Sans";
+    src: url("fonts/PixeloidSans-JR6qo.ttf");
+}  
+
 nav {
     background-color: black;
     display: flex;
