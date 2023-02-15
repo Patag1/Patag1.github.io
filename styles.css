@@ -195,8 +195,8 @@ body {
 .projects img {
     width: 296px;
     height: 200px;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
     background-color: #5f9bcd;
 }
 
@@ -312,4 +312,53 @@ p {
 
 .links {
     padding: 20px;
+}
+
+.skills {
+    position: relative;
+    /* width: 50%; */
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
+}
+
+.desc {
+    position: relative;
+    width: 50%;
+}
+
+.langs {
+    width: 20%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.langs .btn {
+    border-radius: 0;
+    width: 100%;
+    font-family: ArcadeClassic;
+}
+
+.fwlib {
+    width: 20%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fwlib .btn {
+    border-radius: 0;
+    width: 100%;
+    font-family: ArcadeClassic;
 }
