@@ -22,6 +22,13 @@ nav {
     font-family: ArcadeClassic;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 nav a {
     color: #ffffff;
 }
@@ -43,6 +50,8 @@ nav div {
     width: 50px;
     height: 50px;
     right: 0;
+    -webkit-user-drag: none;
+    user-drag: none;
 }
 
 .message {
@@ -56,7 +65,7 @@ nav div {
 	line-height: 1.3em;
 	background-color: #ffffff;
     border: 2px solid black;
-    outline: 2px solid #ffffff;
+    outline: 1px solid #ffffff;
     border-radius: 10px;
 	color: black;
 	padding: 12px;
@@ -70,8 +79,9 @@ nav div {
 
 header {
     background-color: #ffffff;
-    padding: 20px;
+    padding: 50px;
     margin-top: 100px;
+    width: 90%;
 }
 
 header h1 {
@@ -97,6 +107,7 @@ body {
 
 .portfolio-container {
     margin-top: -50px;
+    width: 90%;
 }
 
 .portfolio-container h3 {
@@ -108,13 +119,23 @@ body {
 
 .container-links {
     background-color: #48DC6B;
-    margin: 60px;
     border-radius: 10px;
+    width: 90%;
+    padding: 20px;
+}
+
+.txtimg {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.txtimg img {
+    -webkit-user-drag: none;
+    user-drag: none;
 }
 
 .container-links h3 {
-    padding-top: 20px;
-    padding-left: 20px;
     font-size: 50px;
     -webkit-text-stroke: .5px #ffffff;
     text-stroke: .5px #ffffff;
@@ -193,19 +214,28 @@ body {
 }
 
 .projects img {
-    width: 296px;
+    width: 286px;
     height: 200px;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     background-color: #5f9bcd;
+    -webkit-user-drag: none;
+    user-drag: none;
 }
 
 .p1 {
     background-color: #ffffff;
     border-radius: 10px;
-    width: 300px;
+    width: 290px;
     border: 2px solid black;
     transition: all .3s ease;
+}
+
+.p1 img {
+    width: 286px;
+    height: 269px;
+    -webkit-user-drag: none;
+    user-drag: none;
 }
 
 .p1 p {
@@ -232,7 +262,7 @@ body {
 .p2 {
     background-color: #ffffff;
     border-radius: 10px;
-    width: 300px;
+    width: 290px;
     border: 2px solid black;
     transition: all .3s ease;
 }
@@ -246,7 +276,7 @@ body {
 .p3 {
     background-color: #ffffff;
     border-radius: 10px;
-    width: 300px;
+    width: 290px;
     border: 2px solid black;
     transition: all .3s ease;
 }
@@ -291,7 +321,7 @@ p {
 .accordion-body {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .accordion-body p {
@@ -360,5 +390,25 @@ p {
 .fwlib .btn {
     border-radius: 0;
     width: 100%;
+    font-family: ArcadeClassic;
+}
+
+.email {
+    background-color: #ffffff;
+    margin: 20px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.email input {
+    font-family: Pixeloid Sans;
+}
+
+.email textarea {
+    font-family: Pixeloid Sans;   
+}
+
+.email button {
     font-family: ArcadeClassic;
 }
